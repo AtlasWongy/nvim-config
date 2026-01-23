@@ -1,2 +1,3 @@
-require("options")
-require("plugins")
+require("atlas.core")
+require("atlas.lazy")
+-- require("plugins")

@@ -7,6 +7,8 @@ vim.lsp.start({
     cmd = cmd,
     root_dir = vim.fs.dirname(vim.fs.find({ "project.godot", ".git" }, { upwards = true })[1]),
     on_attach = function(client, bufnr)
-        vim.api.nvim_command('echo serverstart("' .. pipe .. '")')
+        if not client.attached_buffers[bufnr] then
+            vim.api.nvim_command('echo serverstart("' .. pipe .. '")')
+        end
     end
 })
