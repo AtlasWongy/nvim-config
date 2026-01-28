@@ -23,15 +23,24 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     { import = "atlas.plugins" }
 })
-
 -- Remove when more confident
---require("lazy").setup({                                      
---    require "atlas.plugins.colorscheme",                     
---    require "atlas.plugins.treesitter",                      
---    require "atlas.plugins.treesitter-textobjects",          
---    require "atlas.plugins.nvim-lspconfig",                  
---    require "atlas.plugins.mason",                           
---    require "atlas.plugins.mason-lspconfig",                 
---    require "atlas.plugins.blink-cmp",                       
---M    require "atlas.plugins.lazydev",                         
---})                                                           
+--require("lazy").setup({
+--    require "atlas.plugins.colorscheme",
+--    require "atlas.plugins.treesitter",
+--    require "atlas.plugins.treesitter-textobjects",
+--    require "atlas.plugins.nvim-lspconfig",
+--    require "atlas.plugins.mason",
+--    require "atlas.plugins.mason-lspconfig",
+--    require "atlas.plugins.blink-cmp",
+--    require "atlas.plugins.treesitter-modules",
+--    {
+--        "folke/lazydev.nvim",
+--        ft = "lua",
+--        opts = {
+--            library = {
+--                { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+--            }
+--        }
+--   },
+--    require "atlas.plugins.roslyn-nvim",
+--})

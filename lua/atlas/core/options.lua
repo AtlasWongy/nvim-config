@@ -14,8 +14,3 @@ vim.opt.ignorecase=true
 vim.opt.termguicolors=true
 
 vim.g.mapleader = " "
-
--- Set up diagnostics
-vim.diagnostic.config({
-    virtual_lines = true
-})
