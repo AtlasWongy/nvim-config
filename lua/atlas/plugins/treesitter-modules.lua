@@ -2,7 +2,7 @@ return {
     "MeanderingProgrammer/treesitter-modules.nvim",
     config = function()
     require("treesitter-modules").setup({
-        ensure_installed = { "c_sharp", "gdscript", "c", "lua", "vim", "vimdoc", "query" },
+        ensure_installed = { "python", "c_sharp", "gdscript", "c", "lua", "vim", "vimdoc", "query" },
         auto_installed = true,
         highlight = {
             enable = true
